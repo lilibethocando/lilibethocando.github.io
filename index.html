@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebPAge</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       * {
+      font-family: 'Caveat';
+    }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <H1>Coding Journey: Python & Backend Focus</H1>
+        <div class="banner-text">#love it. make mistakes. learn. keep grinding.</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                 </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <img src="mypict.jpeg" alt="My picture" width="150px">
+            <h2 id="unique">About me</h2>
+            <p>Welcome to my Website</p>
+            <p>
+                Hi there! I'm Lilibeth Ocando, a former Software Support Engineer with a background in Telecommunications Engineering. Currently, I am on an exciting journey transitioning to Software Engineering.
+            </p>
+            <p>
+                My focus is on refining my skills in Python and PostgreSQL while venturing into the realms of JavaScript and React. I am passionate about building robust and efficient backend solutions using Python.
+            </p>
+            <p>
+                My goal is to contribute to the world of Software Engineering and land a rewarding position in Backend Development using Python. Join me on this learning adventure as I explore the vast possibilities of coding and development!
+            </p>
+
+        </article>
+
+        <article>
+            <h2>Contact me</h2>
+            <form>
+                <div class="form-label">
+                    <label for="title-field">Title</label>
+                </div>
+                <div>
+                    <input id="title-field" type="text" placeholder="Title" size="30">
+                </div>
+                <div>
+                    <label for="message-field">Message</label>
+
+                </div>
+                <div>
+                    <textarea id="message-field" type="text" placeholder="Message" cols="100" rows="10"></textarea>
+                </div>
+                <button id="submitBtn" type="button" onclick="submitForm()">Submit</button>
+            </form>
+
+        </article>
+        <script>
+            function submitForm() {
+                var titleInput = document.getElementById('title-field');
+                var messageInput = document.getElementById('message-field');
+            
+                var title = titleInput.value;
+                var message = messageInput.value;
+            
+                if (title && message) {
+                    var subject = 'New Form Submission';
+                    var body = 'Title: ' + title + '\n\nMessage: ' + message;
+            
+                    // Replace 'your_email@example.com' with your actual email address
+                    var mailtoLink = 'mailto:lilibethocando@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            
+                    window.location.href = mailtoLink;
+            
+                    // Clear the input fields after successful submission
+                    titleInput.value = '';
+                    messageInput.value = '';
+            
+                    alert('Email sent successfully!');
+                } else {
+                    alert('Please fill in both Title and Message fields.');
+                }
+            }
+            </script>
+            
+            
+
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>Contact: lilibethocando@gmail.com</p>
+        <a href="https://github.com/lilibethocando">Find my projects here!</a>
+
+    </footer>
+    
+</body>
+</html>
