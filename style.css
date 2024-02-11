@@ -8,7 +8,7 @@ header {
     width: 100%;
     height: 430px; /* Adjust the height as needed */
     overflow: hidden;
-    background-image: url('./lili_Banner.png');
+    background-image: url('https://res.cloudinary.com/dbpjafgz0/image/upload/v1707615235/lili_Banner_dcfzyl.png');
     background-size:cover;
     background-position: top;
     position: relative;
@@ -75,14 +75,14 @@ article img {
 
 }
 article {
-    display:;
+    display:flexbox;
     color: black;
     background-color: lightgray;
     font-size: 24px;
     margin: 0 auto 20px;
     border: 2px solid black;
     padding: 50px;
-    width: 80%;
+    max-width: 80%;
     border-radius: 10px;
     
 }
@@ -122,4 +122,3 @@ footer {
     padding: 0;
     box-sizing: border-box;
 }
-
