@@ -115,3 +115,14 @@ footer {
     text-align: center;
     border: 2px solid black;
 }
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    header {
+        height: 200px; /* Adjust header height for smaller screens */
+    }
+    .banner-text {
+        font-size: 18px; /* Adjust font size for banner text */
+    }
+    /* Add more responsive styles as needed */
+}
