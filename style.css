@@ -6,7 +6,7 @@
 
 header {
     width: 100%;
-    height: 430px; /* Adjust the height as needed */
+    height: 460px; /* Adjust the height as needed */
     overflow: hidden;
     background-image: url('https://res.cloudinary.com/dbpjafgz0/image/upload/v1707615235/lili_Banner_dcfzyl.png');
     background-size:cover;
@@ -24,7 +24,6 @@ header {
     text-align: right;
     font-size: 24px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -33,8 +32,10 @@ main {
 
 /* Additional styles for better readability */
 h1 {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    top: 0%;
+    left: 60%;
     color: green; /* Text color for h1 */
 }
 
@@ -53,6 +54,8 @@ nav {
     background-color: greenyellow; /* Background color for nav */
     padding: 5px;
     text-decoration:none;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 ul {
@@ -94,6 +97,7 @@ form {
     border-radius: 20px;
     padding: 20px;
     font-size: 20px;
+
 }
 
 input, textarea {
@@ -114,11 +118,26 @@ footer {
     color: black;
     text-align: center;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 /* Add a general reset to ensure consistent styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* Add this CSS to your style.css file */
+#button {
+    background-color: #4CAF50; /* Green background */
+    border: black; 
+    color: black; /* White text */
+    padding: 20px 40px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor:pointer; /* Pointer cursor */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#button:hover {
+    background-color: #45a049; /* Darker green background on hover */
 }
